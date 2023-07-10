@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(244, 199, 214);
+}
+
+h1{
+    font-family: cursive;
+    color: deeppink;
+}
+
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
