@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p{
+   text-align: justify;
+}
+
+h1{
+    color: #F2388F;
+    text-align: center;
+    text-shadow:1px 1px 0px #ef79b0; /*comentário em css*/
+}
+
+h2{
+    color:#F24535 ;
+}
+
+body{
+  background-image: linear-gradient(to right, #5E7358, #8DA691);
+}
+
+main{
+    background-color: white;
+    border-radius: 20px; /*borda da caixa de texto*/
+    box-shadow: 6px 6px 6px #F2388F ; /*sombra da caixa de texto*/
+    width: 600px;
+    padding: 10px; /*espaço entre o texto e a borda da caixa*/
+    margin: auto;
+}
