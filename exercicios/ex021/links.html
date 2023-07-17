@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        main{
+            background-color: #EAC5D8;
+            border-radius: 20px;
+            width: 600px;
+            padding: 10px;
+            margin: auto;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            color: #E55934;
+        }
+
+        a{ /*estilo dos links*/
+          color: #9AE5E6;
+        }
+
+        /*pseudo-classes*/
+        a:visited{ /*links que já foram visitados*/
+           color: #443850;
+        }
+
+        a:hover{ /*quando o mouse está em cima do link*/
+            color: #BBBE64;
+            text-decoration: underline;
+        }
+
+        a:active{ /*quando o mouse clicar no link*/
+        color: black;
+        }
+
+        /*pseudo elementos*/
+        a::before{
+            content: '✿';
+            color: #E55934;
+        }
+
+        a::after{
+            content: '[Link]';
+            color: #04724D;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Personalizando links</h1>
+        <ul>
+            <li><a href="https://github.com/mikiLawand">Perfil do Github</a></li>
+            <li><a href="https://www.linkedin.com/in/michelle-lawand/">Perfil do Linkedln</a></li>
+        </ul>
+    </main>
+</body>
+</html>

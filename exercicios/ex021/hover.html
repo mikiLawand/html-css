@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        div > p{ /*definindo que existe um paragrafo escondido dentro da div*/
+            display: none;
+        }
+
+        div:hover > p{ /*configurando a aparencia deste paragrafo escondido quando o mouse for passado em cima dele*/
+            display: block;
+            color: white;
+            background-color: rgb(216, 112, 161);
+            width: 300px;
+        }
+
+        div:hover{ /*separador que muda de cor quando passa o mouse*/
+           color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        passe o mouse aqui
+        <p>texto escondido</p>
+    </div>
+    <p>Fim do exemplo</p>
+</body>
+</html>
