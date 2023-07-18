@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #FFB5D0;
+            margin: 0px;
+        }
+
+        header{
+            text-align: center;
+            width: auto;
+            background-color: #FFB5D0;
+            padding: 5px;
+            margin: 1px;
+        }
+
+        nav{
+            background-color: #FFCEE0;
+            padding: 10px;
+            box-shadow: 2px 2px 2px rgba(2, 2, 2, 0.311);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: rgb(81, 79, 79);
+            font-weight: bolder;
+            margin-right: 30px;
+        }
+
+        main{
+            background-color: #B5CAFF;
+            padding: 5px;
+            margin: 1px;
+        }
+
+        article{
+            background-color: aliceblue;
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: #FFF1CF;
+        }
+
+        footer{
+            background-color: #FFCEE0;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <!--cabecalho do site-->
+    <header>
+      <h1>Cherry Six</h1>
+      <nav> <!--links de menu-->
+        <a href="">Writings</a>
+        <a href="">Articles</a>
+      </nav>
+    </header>
+    <main>
+      <section id="romance"> <!--categorias-->
+        <p>A voz do silêncio</p>
+        <article>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nulla eaque eum placeat quo corrupti culpa, omnis nihil, animi veniam minima, consequuntur necessitatibus laborum dicta magnam! Dolores deleniti ipsa possimus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nobis, autem dolor nostrum possimus tenetur commodi iure nam quis officiis placeat corporis aperiam dicta repudiandae molestias nesciunt dolores eum aspernatur!</p>
+            <aside> <!--conteudo periferico-->
+              <p>História escrita por Miki</p>  
+            </aside>
+        </article>
+      </section>
+    </main>
+    <footer> <!--rodapé-->
+      <p>Desenvolvido por Michelle Lawand</p>
+    </footer>
+</body>
+</html>
