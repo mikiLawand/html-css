@@ -1,5 +1,82 @@
 @charset "UTF-8";
 
+@import 
+url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+@font-face{
+    font-family: Code;
+    src: url('../fontes/VT323-Regular.ttf') format('TrueType');
+    font-weight: normal;
+}
+
+:root{ /*todas as configurações colocadas aqui dentro servem para o arquivo todo*/
+  --corPink: #FF00BF;
+  --corRosaClaro: #FFBFE7;
+  --corAzulEscuro: #1700D1;
+  --corAzulmedio: #0B70DE;
+  --corAzulClaro: #A8B4EA;
+  --fonteDecorativa: 'Code', cursive;
+  --fonteNormal:'Lora', serif;
+  
+
+}
+
+*{ 
+    margin: 0px;
+    padding: 0px;
+}
+
 body{
     background-color: #A8B4EA;
+    font-family: var(--fonteDecorativa);
+}
+
+header{
+    background-color: var(--corAzulEscuro);
+}
+
+header > h1{
+   color: var(--corPink);
+   font-family: var(--fonteDecorativa);
+   text-align: center;
+}
+
+header > p{
+    color: var(--corRosaClaro);
+    font-family: var(--fonteNormal);
+    text-align: center;
+}
+
+nav{
+    background-color: var(--corRosaClaro);
+    text-align: center;
+}
+
+main{
+    background-color: whitesmoke;
+}
+
+article > h1{
+    color: var(--corPink);
+}
+
+article > h2{
+    color: var(--corAzulmedio);
+}
+
+article > p{
+    font-family: var(--fonteNormal);
+}
+
+aside{
+    background-color: var(--corAzulClaro);
+    font-family: var(--fonteNormal);
+}
+
+aside > h3{
+    color: var(--corAzulEscuro);
+}
+footer{
+    background-color: var(--corRosaClaro);
+    color: var(--corPink);
 }
