@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagens de fundo</title>
+    <style>
+        div.quadrado{ /*formando a fileira de três quadrados*/
+            display: inline-block;
+            border: 2px solid palevioletred;
+            border-radius: 15px;
+            background-color: cornsilk;
+            width: 200px;
+            height: 200px;
+        }
+
+        div#q1{ /*preenchendo o fundo com uma cor*/
+           background-color: deeppink;
+        }
+
+        div#q2{ /*preenchendo o fundo com duas cores em gradiente*/
+          background-image: linear-gradient(to bottom, rgb(255, 189, 251), rgb(192, 255, 198));
+        }
+
+        div#q3{ /*preenchendo o fundo com uma imagem*/
+          background-image: url('imagens/img1.png');
+        }
+
+        body{
+            background-image: url('imagens/pexels-julia-filirovska-8259577.jpg');
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+
+    </div>
+    <div class="quadrado" id="q2">
+
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
+</body>
+</html>
