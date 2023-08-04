@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+:root{
+    --fonteDisplay:'Calistoga', cursive;
+    fonteCorpo:'Itim', cursive; 
+}
+
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+html, boddy{
+    min-height: 100vh;
+    background-color:whitesmoke;
+}
+
+header{
+    background-color: #BF3604;
+    color: whitesmoke;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-transform: uppercase;
+}
+
+a{
+    color: #401E01;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline; /*sublinha o texto do link quando o mouse está por cima*/
+}
+
+section{
+   padding-top: 10vh; 
+   padding-bottom: 10vh;
+   line-height: 2em; /*espaçamento duplo entre as linhas*/
+   padding-left: 30px;
+}
+
+section.normal{
+    background-color: #254027;
+    color: whitesmoke;
+}
+
+section.imagem{
+    background-color: #97A660;
+    color: white;
+}
+
+section.imagem > p{
+    width: 300px;
+    background-color: #aec16ab2;
+}
+
+footer{
+    background-color:#BF3604;
+    color: whitesmoke;
+    text-align: center;
+    padding:10px;
+}
