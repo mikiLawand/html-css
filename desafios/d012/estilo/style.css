@@ -6,7 +6,7 @@
 
 :root{
     --fonteDisplay:'Calistoga', cursive;
-    fonteCorpo:'Itim', cursive; 
+    --fonteCorpo:'Itim', cursive; 
 }
 
 *{
@@ -28,7 +28,9 @@ header{
 header > h1{
     padding-top: 60px;
     padding-bottom: 60px;
+    font-family: var(--fonteDisplay);
     text-transform: uppercase;
+    font-size: 6vw; /*10% da largura da tela,para que seja adaptavel*/
 }
 
 a{
@@ -46,6 +48,12 @@ section{
    padding-bottom: 10vh;
    line-height: 2em; /*espaçamento duplo entre as linhas*/
    padding-left: 30px;
+   font-family: var(--fonteCorpo);
+   font-size: 3.5vw;
+}
+
+section > p{
+    padding: 1em; /*criando paragrafos*/
 }
 
 section.normal{
@@ -56,11 +64,28 @@ section.normal{
 section.imagem{
     background-color: #97A660;
     color: white;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; /*fixando a imagem ao fundo da tela*/
 }
 
 section.imagem > p{
-    width: 300px;
+    display: inline-block;
     background-color: #aec16ab2;
+    padding: 5px;
+    text-shadow:  1px 1px 0px rgba(0, 0, 0, 0.55);
+}
+
+section#img01{
+   background-image: url('../imagens/pexels-mo-eid-11890414.jpg');
+   
+   
+}
+
+section#img02{
+  background-image: url('../imagens/pexels-nick-wehrli-3762284.jpg');
+  
+  
 }
 
 footer{
