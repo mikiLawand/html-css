@@ -12,6 +12,12 @@
         table{
             width: 600px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption{
+          background-color: hotpink;
+          font-family: Arial, Helvetica, sans-serif;
         }
 
         td, th{
@@ -22,21 +28,35 @@
         thead, tfoot{
             background-color: rgb(255, 7, 185);
         }
+
+        thead > tr > th{
+          position: sticky;
+          top: 0;
+          background-color: rgb(255, 7, 185); /*essa cor precisa ser a mesma do thead*/
+        }
+
+        tbody > tr:nth-child(2n){ /*de duas em duas linhas ele colore*/
+          background-color:hotpink ;
+        }
     </style>
 </head>
 <body>
     <h1>Tabelas grandes</h1>
     <!--anatomia para tabelas grandes
         table
+         caption = legenda
           thead = cabeça
             tbody = corpo 
               tfoot = rodape
     -->
     <h2>Minhas músicas mais ouvidas &#x1F3B5</h2>
     <table>
+      <caption>Músicas mais ouvidas</caption>
        <thead>
-          <th>Música</th>
-          <th>Cantor/a</th>
+          <th scope="col">Música</th> <!--o dado vem na coluna abaixo
+            se fosse, o dado ao lado na mesma linha seria scope=row
+          -->
+          <th scope="col" style="width: 150px;">Cantor/a</th> <!--configurando a largura da coluna-->
        </thead> 
        <tbody>
           <tr>
@@ -78,6 +98,22 @@
           <tr>
             <td>Cruel summer</td>
             <td>Taylor Swift</td>
+          </tr>
+          <tr>
+            <td>My Ordinary life</td>
+            <td>The Living Tombstone</td>
+          </tr>
+          <tr>
+            <td>Heavy in your arms</td>
+            <td>Florence + The Machine</td>
+          </tr>
+          <tr>
+            <td>One of the girls</td>
+            <td>The Weekend,Jennie</td>
+          </tr>
+          <tr>
+            <td>Possesion of a weapon</td>
+            <td>Ashnikko</td>
           </tr>
        </tbody>
        <tfoot>
