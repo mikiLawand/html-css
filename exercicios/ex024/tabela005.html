@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            background-color: rgb(144, 149, 238);
+        }
+
+        th, td{
+            border: 3px solid rgb(229, 173, 255);
+            padding: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <table>
+      <caption>Livros Favoritos</caption>
+      <thead>
+        <th scope="col">Genêro</th>
+        <th scope="col">Autor/a</th>
+        <th scope="col">Titulo</th>
+        <!--se os dados estivessem em grupo abaixo da coluna, seria usado o colgroup-->
+      </thead>
+      <tfoot>
+        <tr>
+            <th colspan="2" scope="row">Total</th>
+            <td>6</td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+            <th rowspan="3" scope="rowgroup">Clássicos</th> <!--primeira linha-->
+            <td>Jane Austen</td>
+            <td>Orgulho e Preconceito</td>
+        </tr>
+        <tr>
+            <td>Virginia Woolf</td>
+            <td>Orlando</td>
+        </tr>
+        <tr>
+            <td>Alexandre Dumas</td>
+            <td>Os Três Mosqueteiros</td>
+        </tr>
+        <tr>
+            <th rowspan="3" scope="rowgroup">Fantasia</th>
+            <td>Diana Wynne Jones</td>
+            <td>Castelo Animado</td>
+        </tr>
+        <tr>
+            <td>Sarah J. Maas</td>
+            <td>Corte de Espinhos e Rosas</td>
+        </tr>
+        <tr>
+            <td>Holly Black</td>
+            <td>O Principe Cruel</td>
+        </tr>
+      </tbody>
+    </table>
+</body>
+</html>
