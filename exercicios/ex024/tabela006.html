@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            background-color: rgb(144, 149, 238);
+        }
+
+        th, td{
+            border: 3px solid rgb(229, 173, 255);
+            padding: 10px;
+        }
+
+        tr.destaque{ /*metodo para destacar linhas*/
+            background-color: blueviolet;
+        }
+
+        col.cnome{ /*destacando toda a coluna atraves do colgroup*/
+            background-color: darkslateblue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup> <!--agrupando colunas para style-->
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprofi">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>George Russel</td>
+            <td>Masculino</td>
+            <td>25</td>
+            <td>Piloto de F1</td>
+        </tr>
+        <tr>
+            <td>Charles Leclerc</td>
+            <td>Masculino</td>
+            <td>25</td>
+            <td>Piloto de F1</td>
+        </tr>
+        <tr class="destaque">
+            <td>Daniel Bruhl</td>
+            <td>Masculino</td>
+            <td>44</td>
+            <td>Ator</td>
+        </tr>
+        <tr>
+            <td>Kristen Stewart</td>
+            <td>Feminino</td>
+            <td>33</td>
+            <td>Atriz</td>
+        </tr>
+    </table>
+</body>
+</html>
