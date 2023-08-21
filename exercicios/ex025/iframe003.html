@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela{
+            width: 95vw;
+            height: 300px;
+            border: 2px solid hotpink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque suscipit exercitationem laboriosam quas a, iste temporibus sunt amet tenetur facere nemo molestias enim voluptates, quaerat, modi id cum porro accusantium!</p>
+
+    <ul>
+        <li><a href="paginasExtras/p001.html" target="frame">Primeira pagina</a></li>
+        <!--target com o objeto frame para que o conteudo seja aberto dentro dele-->
+        <li><a href="paginasExtras/p002.html" target="frame">Segunda Página</a></li>
+        <li><a href="paginasExtras/p003.html" target="frame">Terceira Página</a></li>
+    </ul>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia ullam, laboriosam facere ad tempore velit ut quas consectetur, eveniet impedit ratione sint accusantium nostrum laborum, voluptates pariatur veritatis blanditiis consequatur.</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma opção.</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum distinctio doloremque excepturi quos, numquam rerum. Alias reprehenderit officiis culpa explicabo quaerat error! Libero atque quis ipsam perferendis consequatur corrupti unde.</p><img src='imagens/P.png'>"</iframe>>
+    <!--o srcdoc permite criar comteudos simples de html dentro dele mesmo-->
+        <p>Infelizmente seu navegador não é compativel com este conteudo :(</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, illum similique. Enim ipsum itaque, ex fugit illo et natus maxime nostrum error illum fuga magni facere. Temporibus distinctio eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste maiores magnam, tempora ab, neque itaque maxime harum aliquam corrupti dignissimos odit omnis! Nihil optio sequi, quos fugit minus sed dolores?</p>
+</body>
+</html>
