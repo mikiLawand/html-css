@@ -7,9 +7,15 @@
 </head>
 <body>
     <h1>Meu Primeiro Formulário</h1>
-    <form action="">
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+    <form action="cadastro.java" method="post">
+    <!--method post não mostra os dados do formulario na url
+        dados não sensiveis get
+        dados sensiveis post
+    -->
+        <p><label for="inome">Nome:</label> <!--relacionando a etiqueta ao elemento da caixa,que deve ser sempre nomeado igual ao name ou id-->
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
         <input type="submit" value="Enviar">
     </form>
 </body>
