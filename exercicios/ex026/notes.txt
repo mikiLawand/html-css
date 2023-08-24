@@ -1,0 +1,7 @@
+autocomplete="on"
+  <input
+    required > caixa é obrigatória
+    placeholder > texto que fica dentro da caixa
+    autocomplete username/current-password > permite que o navegador complete as caixas 
+    min/max-lenght > tamanho do que pode ter dentro da caixa
+    size > tamanho da caixa em si 
