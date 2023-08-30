@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 006</title>
+</head>
+<body>
+    <h1>Cor, avaliação e arquivo</h1>
+    <form action="cadastro.java" method="post">
+        <!--usuário escolhe uma cor-->
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor">
+        </p>
+        <!--usuário avalia-->
+        <p>
+            <label for="iavaliacao">Avaliação:</label>
+            <input type="range" name="avaliação" id="iavaliacao" min="1" max="10">
+        </p>
+        <!--usuário envia uma imagem,arquivo-->
+        <p>
+            <label for="ifoto">Imagem:</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
