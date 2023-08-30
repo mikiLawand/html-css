@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check box e Radio buttom</title>
+</head>
+<body>
+    <h1>Check Box</h1>
+    <form action="cadastro.java" method="get">
+        <fieldset>
+            <legend>Informações Básicas</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Sexo</legend>
+            <!--permite marcar apenas uma das opções
+                precisam ter o mesmo name
+            -->
+            <input type="radio" name="sexo" id="isxm" value="M">Masculino <label for="isxm"></label>
+            <input type="radio" name="sexo" id="isxf" value="F"> Feminino <label for="isxf"></label>
+            <input type="radio" name="sexo" id="isxnb" value="NB"> Não-binário <label for="isxnb"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Meus Pilotos Favoritos</legend>
+            <!--permite marcar multiplas opções-->
+            <input type="checkbox" name="picl" id="ipicl"><label for="ipicl">Charles Leclerc</label><br>    
+            <input type="checkbox" name="pifa" id="ipifa"> <label for="ipifa">Fernando Alonso</label><br>
+            <input type="checkbox" name="pimv" id="ipimv"> <label for="ipimv">Max Versttappen </label><br>
+            <input type="checkbox" name="pisv" id="ipisv"> <label for="ipisv">Sebastian Vettel</label><br>
+            <input type="checkbox" name="pidr" id="ipidr"> <label for="ipidr">Danel Riccardo</label><br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
