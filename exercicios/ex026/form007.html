@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Select,Datalist e Textarea</h1>
+    <form action="cadastro.java" method="post">
+        <!--select
+            usuario escolhe entre opções dadas
+        -->
+        <p>
+            <label for="iequipe">Equipe:</label>
+            <select name="equipes" id="iequipe">
+                <option value="" selected>---escolha---</option>
+                <optgroup label="F1">
+                    <option value="Ferrari">Ferrari</option>
+                    <option value="Aston Martin">Aston Martin</option>
+                    <option value="Mercedes">Mercedes</option>
+                </optgroup>
+            </select>
+        </p>
+        <!--datalist
+            usuario pode escolher entre as opções dadas ou preencher 
+        -->
+        <p>
+            <label for="icargo">Cargo na equipe:</label>
+            <input type="text" name="cargo" id="icargo" list="lscargo">
+            <datalist id="lscargo">
+                <option value="Chefe de Equipe"></option>
+                <option value="Estrategista"></option>
+                <option value="Engenheiro"></option>
+                <option value="Mecanico"></option>
+            </datalist>
+        </p>
+        <!--textarea-->
+        <p>
+            <label for="imsg">Escreva uma mensagem para seu piloto favorito :)</label><br>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
