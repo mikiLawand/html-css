@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 010</title>
+</head>
+<body>
+    <form action="cadastro.java" method="get">
+
+        <p>
+            <label for="iano">Digite seu ano de nascimento:</label>
+            <input type="number" name="ano" id="iano" min="1950" max="2023" oninput="calIdade()"> <!--chamando a função calIdade-->
+        </p>
+
+        <p>
+            <label for="iidade">Sua Idade é:</label>
+            <output id="iidade">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <script>
+        function calIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+            /*o valor do ano de nascimento é subtraido do valor do ano atual 
+                e é armazenado no iidade
+            */
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+</head>
+<body>
+    <form action="cadastro.java" method="get" autocomplete="on">
+        <!--numero 1-->
+        <p>
+            <label for="in1">Número 1:</label>
+            <input type="number" name="n1" id="in1" min="0" max="100" required 
+            oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            <!--oninput = lê os dados fornecidos pelo usuario
+                depois pega o valor de in1(numero1) e soma com o de in2
+                 os mandando para isoma
+            -->
+        </p>
+        <!--numero 2-->
+        <p>
+            <label for="in2">Número 2:</label>
+            <input type="number" name="n2" id="in2" min="0" max="100" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <!--resultado da soma
+            o resultado só aparece para o usuario e não fica gravado!
+        -->
+        <p>
+            <label for="isoma">Soma:</label>
+           <output name="soma" id="isoma">0</output>
+        </p>
+    </form>
+</body>
+</html>
