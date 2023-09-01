@@ -11,7 +11,7 @@ html, body{
     width: 100vw;
     height: 100vh;
     background-color: #A0C1D1;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
