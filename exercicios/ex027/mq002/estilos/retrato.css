@@ -3,5 +3,7 @@
 
 body{
    background: url(../imagens/cev-portrait.jpg);
-   background-position: center center;
+   background-position: center bottom;
+   background-size: 85%;
+   background-repeat: no-repeat;
 }
