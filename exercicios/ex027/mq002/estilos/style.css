@@ -1,2 +1,22 @@
 @charset "UTF-8";
-/*CONFIGURAÇÕES GERAIS*/
+/*CONFIGURAÇÕES GERAIS PARA TODOS OS TIPOS DE MIDIAS*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #A0C1D1;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h1{
+    color: #232C33;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.13);
+    padding: 10px;
+}
