@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/*VERSÃO PARA TODAS AS DEMAIS MIDIAS*/
+
+/*Typical device breakpoints set 2023
+celular: até 812px 
+tablet: 768px até 1024px 
+laptop: 1920px até 1080px 
+tv: 1200 ~ 
+*/
+
+/*conteudo na impressora*/
+@media print{
+   *{
+    font-family: 'Courier New', Courier, monospace;
+   }
+
+   main h1{
+    text-shadow: none;
+    color: black;
+   }
+
+   main::after{
+    content: 'Esse conteudo foi produzido por Michelle Lawand';
+   }
+
+/*mostrando só o icone da impressora*/
+img#celular{ display: none; }
+img#tablet{ display: none; }
+img#laptop{ display: none; }
+img#tv{ display: none; }
+img#impressora{ display: block; }
+}
+
+/*conteudo no tablet*/
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg); /*mudando a imagem de fundo*/
+    }
+
+/*mostrando apenas o icone do tablet*/
+img#celular{ display: none; }
+img#tablet{ display: block; }
+img#laptop{ display: none; }
+img#tv{ display: none; }
+img#impressora{ display: none; }
+}
+
+/* conteudo no laptop*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+/*mostrando apenas o icone do laptop*/
+img#celular{ display: none; }
+img#tablet{ display: none; }
+img#laptop{ display: block; }
+img#tv{ display: none; }
+img#impressora{ display: none; }
+}
+
+/* conteudo na tv*/
+@media screen and (min-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main{
+        width: 800px;
+    }
+
+/*mostrando só o icone da tv*/
+img#celular{ display: none; }
+img#tablet{ display: none; }
+img#laptop{ display: none; }
+img#tv{ display: block; }
+img#impressora{ display: none; }
+}
+
