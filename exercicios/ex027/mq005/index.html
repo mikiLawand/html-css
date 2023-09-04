@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <!--importanto o icone do google fonts icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/midia-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Mini Menu</h1>
+        <!--icone do menu hamburguer-->
+        <span id="burguer" class="material-icons" onclick="clickMenu()">
+            menu
+            </span>
+            <menu id="menu">
+                <ul>
+                    <li><a href="#">Artigos</a></li>
+                    <li><a href="#">Poemas</a></li>
+                    <li><a href="#">Ficção</a></li>
+                </ul>
+            </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Lilac is the new Royal</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque corporis, sint assumenda quibusdam magnam, accusamus possimus facilis velit placeat provident omnis similique eius quisquam? Neque, odio doloremque. Atque, voluptas rerum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor doloribus, nemo aperiam distinctio repellat similique saepe ratione ea praesentium temporibus. Amet animi optio consequuntur consectetur quia assumenda cupiditate iste facilis!</p>
+        </article>
+    </main>
+    <script>
+
+        function mudouTamanho() {
+            /*se a largura da tela for igual a 768px*/
+            if (window.innerWidth >= 768) {
+             /*o menu é mostrado em bloco*/
+                menu.style.display = 'block'
+            } else { /*se não ele continua escondido*/
+                menu.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+           /*se o menu estiver visivel,*/
+           if (menu.style.display == 'block') {
+            /*ele o torna invisivel*/
+            menu.style.display = 'none'
+           /*se não, ele o torna visivel*/
+           } else {
+              menu.style.display = 'block'
+           }
+        }
+    </script>
+</body>
+</html>

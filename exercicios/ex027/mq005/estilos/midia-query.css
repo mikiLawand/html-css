@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+
+    span#burguer{
+        display: none; /*o icone do menu desaparece, se a tela for maior que 768px*/
+    }
+
+    menu{
+        display: block; /*faz todos os itens do menu aparecerem*/
+    }
+
+    menu > ul > li{
+        display: inline-block; /*deixando os itens um do lado do outro no menu*/
+    }
+
+    main{
+        width: 700px; /*o miolo só vai crescer até 768px, mesmo em telas maiores*/
+    }
+}
