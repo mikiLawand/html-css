@@ -25,13 +25,45 @@
             height: 100%; /*deixando na altura da topbar*/
         }
 
+        header img.logo{
+            max-width: 140px;
+        }
+
         header ul{
             list-style-type: none;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         header ul li{
             display: inline-block;
             margin-left: 25px;
+        }
+
+        section.hero{
+            background-image: url('imagens/pexels-wasa-wasa-11673899.jpg');
+            min-height: 100vh;
+            background-size: cover;
+        }
+
+        section.hero .container{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section.hero .hero-content{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section.hero .hero-content h2{
+            margin: 0px;
+        }
+
+        section.hero .hero-content p{
+            margin: 10px 0px;
+            max-width: 600px;
         }
 
         /*medidas do grid*/
@@ -48,7 +80,7 @@
     <header>
         <!--usando a mesma classe container para todos os elementos-->
         <div class="container">
-            Shock!
+           <img class="logo" src="imagens/logo-header.png" alt="logo">
             <nav>
                 <ul>
                     <li>Exemplo</li>
@@ -57,5 +89,15 @@
             </nav>
         </div>
     </header>
+
+    <section class="hero">
+        <div class="container">
+           <div class="hero-content">
+               <h2>Conheça mais sobre as águas vivas</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt in cupiditate inventore nihil, voluptatum dolorum beatae repudiandae expedita vero numquam? Nemo expedita rem corrupti ducimus numquam nulla? Eos, minima.</p>
+               <button>Saiba mais</button>
+           </div>
+        </div>
+    </section>
 </body>
 </html>
