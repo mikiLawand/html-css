@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shock!</title>
+    <style>
+
+        /*resetando*/
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header{
+           background-color: #47077A;
+           color: #FB23BE;
+        }
+
+        /*aplicando estilos exclusivos ao container do header*/
+        header .container{
+            display: flex; /*alinhando elementos horizontalmente e verticalmente*/
+            align-items: center; /*alinhando verticalmente*/
+            justify-content: space-between; /*distribuindo horizontalmente*/
+            height: 100%; /*deixando na altura da topbar*/
+        }
+
+        header ul{
+            list-style-type: none;
+        }
+
+        header ul li{
+            display: inline-block;
+            margin-left: 25px;
+        }
+
+        /*medidas do grid*/
+        .container {
+           width: 100%; 
+           max-width: 1160px;
+           margin: auto; /*centralizando na tela*/
+           /* border: 3px solid hotpink; */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!--usando a mesma classe container para todos os elementos-->
+        <div class="container">
+            Shock!
+            <nav>
+                <ul>
+                    <li>Exemplo</li>
+                    <li>Teste</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>
