@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico de F1</title>
+    <style>
+
+        main{
+            background-color: rgba(163, 154, 154, 0.838);
+            border-radius: 15px;
+            padding: 15px;
+        }
+
+        /*criando o container*/
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /*quatro colunas de uma fração cada*/
+            grid-column-gap: 10px; /*espaçamento entre as colunas*/
+            align-items: end; /*alinhando os valores no fundo*/
+        }
+
+        /*configurações gerais das colunas*/
+        .equipe {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /*configurações personalizadas de cada coluna*/
+        .red-bull {
+            background-color: #00192D;
+            color: #DF081E;
+            grid-column: span 1;
+            height: 100px; /*representando 100 segundos*/
+        }
+
+        .mercedes {
+            background-color: #00857F;
+            grid-column: span 1;
+            height: 90px;
+        }
+
+        .mcLaren {
+            background-color: #FF8913;
+            color: #FFFFFF;
+            grid-column: span 1;
+            height: 80px;
+        }
+
+        .ferrari {
+            background-color: #FD0000;
+            grid-column: span 1;
+            height: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Gráfico de diferenças de Tempo na Fórmula 1 usando Css Grid</h1>
+    <main>
+        <div class="grid-container">
+            <div class="equipe red-bull">Red Bull</div>
+            <div class="equipe mercedes">Mercedes</div>
+            <div class="equipe mcLaren">McLaren</div>
+            <div class="equipe ferrari">Ferrari</div>
+        </div>
+    </main>
+</body>
+</html>

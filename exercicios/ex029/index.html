@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 029</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+
+        /*criando uma classe para o container*/
+        .grid-container {
+            display: grid; /*criando um container*/
+            grid-template-columns: 1fr 2fr 4fr ; /*dividindo o espaço da tela em 7 frações*/
+            column-gap: 20px; /*espaçamento entre as colunas*/
+        }
+
+        /*elementos do grid*/
+        .item {
+            grid-column: span 1; /*definindo um elemento por cada coluna*/
+        }
+
+        .item:nth-child(odd) {
+            background-color: cornsilk;
+        }
+
+        .item:nth-child(even) {
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Css Grid</h1>
+    <div class="grid-container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+</body>
+</html>
